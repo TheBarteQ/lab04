@@ -1,7 +1,17 @@
-cmake_minimum_required(VERSION 3.13.4)
-project(formatter)
+cmake_minimum_required(VERSION 3.4)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+project(cmake)
 
-add_library(formatter STATIC formatter.cpp formatter.h)
+add_library(
+	formatter STATIC 
+		formatter.cpp
+		formatter.h
+)
+
+set_target_properties(
+	formatter PROPERTIES
+	CXX_STANDART 11
+	CXX_STANDARD_REQUIRED ON
+)
+
+

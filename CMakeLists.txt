@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.4)
-project(solver)
+
+project(Hello_world)
 
 add_subdirectory(formatter_lib)
 add_subdirectory(formatter_ex_lib)
